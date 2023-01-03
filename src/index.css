@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 30%;
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.login-form input {
+  font-size: 1.25rem;
+  padding: 0.25rem;
+}
+
+.login-form button,
+.user-info button {
+  font-size: 1.25rem;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 30%;
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.user-info {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+}
+
+.user-info button {
+  width: 30%;
+}
+
+.todo-form {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.todo-form form {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+}
+
+.todo-form input {
+  padding: 0.25rem;
+  font-size: 1.25rem;
+}
+
+.todo-form button {
+  padding: 0.25rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.todo-list {
+  list-style-type: none;
+  font-size: 1.25rem;
+}
