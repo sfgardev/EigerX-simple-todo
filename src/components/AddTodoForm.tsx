@@ -13,6 +13,7 @@ const AddTodoForm = ({ onAddTodo }: Props) => {
         e.preventDefault();
 
         if (inputRef.current) {
+          if (inputRef.current.value.trim() === "") return;
           onAddTodo(inputRef.current.value);
           inputRef.current.value = "";
           inputRef.current.focus();
