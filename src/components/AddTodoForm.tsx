@@ -10,14 +10,18 @@ const AddTodoForm = ({ onAddTodo }: Props) => {
   return (
     <form
       onSubmit={(e) => {
+        if (
+          inputRef.current === null ||
+          inputRef.current?.value.trim() === ""
+        ) {
+          return;
+        }
+
         e.preventDefault();
 
-        if (inputRef.current) {
-          if (inputRef.current.value.trim() === "") return;
-          onAddTodo(inputRef.current.value);
-          inputRef.current.value = "";
-          inputRef.current.focus();
-        }
+        onAddTodo(inputRef.current.value);
+        inputRef.current.value = "";
+        inputRef.current.focus();
       }}
     >
       <input ref={inputRef} type="text" placeholder="Add Todo" />

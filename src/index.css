@@ -65,7 +65,7 @@
   font-size: 1.25rem;
 }
 
-.todo-form button {
+.todo-form form button {
   padding: 0.25rem;
   font-size: 1.25rem;
   cursor: pointer;
@@ -74,4 +74,18 @@
 .todo-list {
   list-style-type: none;
   font-size: 1.25rem;
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  gap: 2rem
+}
+
+.todo-list li button {
+  padding: 0.25rem;
+  cursor: pointer;
 }
